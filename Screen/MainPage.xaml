@@ -1,0 +1,28 @@
+﻿<Page x:Name="_mainPage" x:Class="VendingDisplay.Screen.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VendingDisplay.Screen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600">
+    <Page.Background>
+        <VisualBrush Stretch="UniformToFill">
+            <VisualBrush.Visual>
+                <MediaElement x:Name="vidContainer"/>
+            </VisualBrush.Visual>
+        </VisualBrush>
+    </Page.Background>
+    <DockPanel Background="#66000000">
+        <Border Background="#7FFFE9A0" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Center"
+                CornerRadius="10">
+            <TextBlock Text="Tap to Continue"
+                       HorizontalAlignment="Center"
+                       FontSize="40"
+                       Foreground="#25316D"
+                       Margin="10"/>
+        </Border>
+    </DockPanel>
+</Page>

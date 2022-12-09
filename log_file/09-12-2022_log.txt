@@ -1,0 +1,66 @@
+Jam 10:52:55
+========================
+Tujuan: Durenkalibata
+Jumlah: 1 tiket
+Harga: Rp3.000
+Metode Pembayaran: Cash
+Bayar: Rp3.000
+Kembalian: Rp0
+Status: Berhasil
+========================
+
+Jam 11:16:21
+========================
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Metode Pembayaran: Cash
+Bayar: Rp5.000
+Kembalian: Rp2.000
+Status: Berhasil
+========================
+
+Jam 14:27:00
+========================
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Metode Pembayaran: Cash
+Bayar: Rp5.000
+Kembalian: Rp2.000
+Status: Berhasil
+========================
+
+Jam 17:17:54
+========================
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Metode Pembayaran: Cash
+Bayar: Rp5.000
+Kembalian: Rp2.000
+Status: Berhasil
+========================
+
+Jam 17:20:38
+========================
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Metode Pembayaran: Cash
+Bayar: Rp5.000
+Kembalian: Rp2.000
+Status: Berhasil
+========================
+
+Jam 17:42:31
+========================
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Metode Pembayaran: Cash
+Bayar: Rp5.000
+Kembalian: Rp2.000
+Status: Berhasil
+========================
+

@@ -1,0 +1,41 @@
+﻿<Page x:Name="_topupPage" x:Class="VendingDisplay.Screen.TopupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VendingDisplay.Screen"
+      mc:Ignorable="d" 
+      Background="#46C2CB"
+      d:DesignHeight="450" d:DesignWidth="600">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border x:Name="topContainer"
+                Background="LightSteelBlue"
+                CornerRadius="0,0,40,40">
+            <Grid HorizontalAlignment="Center" 
+                  VerticalAlignment="Center">
+                <TextBlock x:Name="infoTapText" 
+                           Text="Silahkan Tap Kartu"
+                           FontSize="25"
+                           Foreground="#222222"/>
+            </Grid>
+        </Border>
+        <StackPanel x:Name="paidContainer" Grid.Row="1" Orientation="Vertical" Visibility="Collapsed">
+            <TextBlock Text="Silahkan Masukkan Uang"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       Margin="0,30,0,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                        Margin="40">
+                <Button x:Name="u1kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
+                <Button x:Name="u2kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
+                <Button x:Name="u5kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
+                <Button x:Name="u10kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

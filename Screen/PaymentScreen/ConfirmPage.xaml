@@ -1,0 +1,86 @@
+﻿<Page x:Name="_confirmPage" x:Class="VendingDisplay.Screen.PaymentScreen.ConfirmPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VendingDisplay.Screen.PaymentScreen"
+      mc:Ignorable="d" Background="#DAE2B6"
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="ConfirmPage">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Foreground" Value="#181D31"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <TextBlock x:Name="redirectingTB" 
+                   VerticalAlignment="Bottom" 
+                   HorizontalAlignment="Right"/>
+        <Border Background="White" 
+            HorizontalAlignment="Center"
+            Margin="20"
+            CornerRadius="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical" 
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center"
+                        Margin="0,20,0,0">
+                    <TextBlock Text="Pembayaran Berhasil!!"
+                       HorizontalAlignment="Center"
+                       Margin="0"
+                       FontSize="20"/>
+                    <Image Name="successImg"
+               Width="250"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" 
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center"
+                        Grid.Row="1">
+                    <GroupBox Header="Rincian Pesanan" 
+                          Background="#E8F3D6"
+                          FontSize="16">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Tujuan"/>
+                            <TextBlock Grid.Row="1"
+                                   Text="Jumlah"/>
+                            <TextBlock Grid.Row="2"
+                                   Text="Harga"/>
+
+                            <TextBlock x:Name="tujuanTB" Grid.Column="1"/>
+                            <TextBlock x:Name="jumlahTB" Grid.Row="1" Grid.Column="1"/>
+                            <TextBlock x:Name="hargaTB" Grid.Row="2" Grid.Column="1"/>
+                        </Grid>
+                    </GroupBox>
+                    <TextBlock x:Name="statusTB" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <Border Grid.Row="1"
+                    Background="#E5181D31"
+                    VerticalAlignment="Bottom" 
+                    HorizontalAlignment="Center"
+                    CornerRadius="5,5,0,0"
+                    Padding="20, 5, 20, 5">
+                    <TextBlock Text="Tap to Continue" 
+                           Margin="0"
+                           Foreground="#FAF8F1"
+                           />
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
