@@ -31,6 +31,7 @@ namespace VendingDisplay.Screen
 
         private void _mainPage_Loaded(object sender, RoutedEventArgs e)
         {
+            mWindow.backBtn.Content = "Back";
             mWindow.backBtn.Visibility = Visibility.Collapsed;
             vidContainer.Source = new Uri("D:\\K\\WPFApps\\VendingDisplay\\Image\\Footage kereta api melintas.mp4");
             vidContainer.IsMuted = true;

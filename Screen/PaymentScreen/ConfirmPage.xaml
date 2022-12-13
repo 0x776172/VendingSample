@@ -58,9 +58,9 @@
 
                             <TextBlock Text="Tujuan"/>
                             <TextBlock Grid.Row="1"
-                                   Text="Jumlah"/>
+                                       Text="Jumlah"/>
                             <TextBlock Grid.Row="2"
-                                   Text="Harga"/>
+                                       Text="Harga"/>
 
                             <TextBlock x:Name="tujuanTB" Grid.Column="1"/>
                             <TextBlock x:Name="jumlahTB" Grid.Row="1" Grid.Column="1"/>
@@ -70,15 +70,15 @@
                     <TextBlock x:Name="statusTB" HorizontalAlignment="Center"/>
                 </StackPanel>
                 <Border Grid.Row="1"
-                    Background="#E5181D31"
-                    VerticalAlignment="Bottom" 
-                    HorizontalAlignment="Center"
-                    CornerRadius="5,5,0,0"
-                    Padding="20, 5, 20, 5">
+                        Background="#E5181D31"
+                        VerticalAlignment="Bottom" 
+                        HorizontalAlignment="Center"
+                        CornerRadius="5,5,0,0"
+                        Padding="20, 5, 20, 5">
                     <TextBlock Text="Tap to Continue" 
-                           Margin="0"
-                           Foreground="#FAF8F1"
-                           />
+                               Margin="0"
+                               Foreground="#FAF8F1"
+                               />
                 </Border>
             </Grid>
         </Border>

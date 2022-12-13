@@ -5,7 +5,6 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using VendingDisplay.Resource;
 using VendingDisplay.Screen.PaymentScreen;
-
 namespace VendingDisplay.Screen
 {
     /// <summary>
@@ -14,8 +13,7 @@ namespace VendingDisplay.Screen
     public partial class BuyPage : Page
     {
         GenerateElement generate = new GenerateElement();
-        PaymentMethod pm = new PaymentMethod();
-        List<Button> pmList;
+        private readonly List<Button> pmList;
         public BuyPage()
         {
 
@@ -54,7 +52,6 @@ namespace VendingDisplay.Screen
 
         private void AscBtn_Click(object sender, RoutedEventArgs e)
         {
-
             int valTicket = int.Parse(valTB.Text);
             valTicket++;
             valTB.Text = valTicket.ToString();
@@ -100,11 +97,17 @@ namespace VendingDisplay.Screen
             _ = cBtn.Name.ToString().Contains("cash")
                 ? mWindow._mainFrame.NavigationService.Navigate(
                     new CashPage(
-                    tujuanCB.Text,
-                    valTB.Text,
-                    price,
-                    0))
-                : mWindow._mainFrame.NavigationService.Navigate(new OnlinePage(cBtn.Content.ToString(), price));
+                        cBtn.Content.ToString(),
+                        tujuanCB.Text,
+                        valTB.Text,
+                        price,
+                        0))
+                : mWindow._mainFrame.NavigationService.Navigate(
+                    new OnlinePage(
+                        cBtn.Content.ToString(),
+                        tujuanCB.Text,
+                        valTB.Text,
+                        price));
         }
     }
 }

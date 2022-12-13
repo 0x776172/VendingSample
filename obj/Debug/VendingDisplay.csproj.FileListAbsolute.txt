@@ -40,3 +40,7 @@ D:\K\WPFApps\VendingDisplay\obj\Debug\Screen\PaymentScreen\ConfirmPage.g.cs
 D:\K\WPFApps\VendingDisplay\obj\Debug\Screen\PaymentScreen\ConfirmPage.baml
 D:\K\WPFApps\VendingDisplay\obj\Debug\VendingDisplay_Content.g.cs
 D:\K\WPFApps\VendingDisplay\obj\Debug\VendingDisplay.csproj.AssemblyReference.cache
+D:\K\WPFApps\VendingDisplay\bin\Debug\zxing.dll
+D:\K\WPFApps\VendingDisplay\bin\Debug\zxing.presentation.dll
+D:\K\WPFApps\VendingDisplay\bin\Debug\zxing.xml
+D:\K\WPFApps\VendingDisplay\bin\Debug\zxing.presentation.xml

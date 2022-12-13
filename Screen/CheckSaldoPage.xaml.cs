@@ -23,11 +23,18 @@ namespace VendingDisplay.Screen
             timer.Interval = TimeSpan.FromSeconds(5);
             _checkSaldoPage.MouseLeftButtonUp += _checkSaldoPage_MouseLeftButtonUp;
             _checkSaldoPage.Loaded += _checkSaldoPage_Loaded;
+            _checkSaldoPage.Unloaded += _checkSaldoPage_Unloaded;
             mWindow.backBtn.Visibility = Visibility.Hidden;
             bmp = new BitmapImage(new Uri("D:/K/WPFApps/VendingDisplay/Image/tap.jpg"))
             {
                 CacheOption = BitmapCacheOption.OnLoad
             };
+        }
+
+        private void _checkSaldoPage_Unloaded(object sender, RoutedEventArgs e)
+        {
+            timer.Stop();
+            timer.Tick -= Timer_Tick;
         }
 
         private void _checkSaldoPage_Loaded(object sender, RoutedEventArgs e)

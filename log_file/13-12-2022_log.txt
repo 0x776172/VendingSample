@@ -1,0 +1,55 @@
+Jam 11:00:30
+========================
+Tujuan: 
+Jumlah:  tiket
+Harga: Rp18.000
+Metode Pembayaran: Cash
+Bayar: Rp18.000
+Kembalian: Rp0
+Status: Berhasil
+========================
+
+Jam 11:00:44
+========================
+Tujuan: 
+Jumlah:  tiket
+Harga: Rp15.000
+Metode Pembayaran: Cash
+Bayar: Rp15.000
+Kembalian: Rp0
+Status: Berhasil
+========================
+
+Jam 11:02:28
+========================
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp5.000
+Metode Pembayaran: Cash
+Bayar: Rp5.000
+Kembalian: Rp0
+Status: Berhasil
+========================
+
+Jam 11:02:38
+========================
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp5.000
+Metode Pembayaran: Gojek
+Bayar: Rp5.000
+Kembalian: Rp0
+Status: Berhasil
+========================
+
+Jam 11:15:09
+========================
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp10.000
+Metode Pembayaran: LinkAja
+Bayar: Rp10.000
+Kembalian: Rp0
+Status: Berhasil
+========================
+

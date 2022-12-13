@@ -12,7 +12,7 @@ namespace VendingDisplay.Resource
         public int? Status { get; set; }
 
 
-        private NpgsqlConnection con;
+        public NpgsqlConnection con;
 
         public void connectDB(string db_name)
         {
@@ -30,6 +30,7 @@ namespace VendingDisplay.Resource
         }
         private PaymentMethod readData(NpgsqlDataReader reader)
         {
+            
             int? id = reader.GetInt16(0);
             object value = reader.GetValue(1);
             /*string value = reader.GetInt32(1).ToString();*/

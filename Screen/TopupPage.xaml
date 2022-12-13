@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:VendingDisplay.Screen"
       mc:Ignorable="d" 
-      Background="#46C2CB"
+      Background="#1F4690"
       d:DesignHeight="450" d:DesignWidth="600">
 
     <Grid>
@@ -14,28 +14,100 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Border x:Name="topContainer"
-                Background="LightSteelBlue"
-                CornerRadius="0,0,40,40">
+                Background="#47B5FF"
+                CornerRadius="0,0,40,40"
+                Margin="20,0,20,10">
             <Grid HorizontalAlignment="Center" 
                   VerticalAlignment="Center">
-                <TextBlock x:Name="infoTapText" 
+                <StackPanel Orientation="Vertical">
+                    <TextBlock x:Name="infoTapText" 
                            Text="Silahkan Tap Kartu"
                            FontSize="25"
                            Foreground="#222222"/>
+                    <Border x:Name="valueContainer"
+                            BorderThickness="0.5" 
+                            CornerRadius="10"
+                            BorderBrush="Black"
+                            Padding="5"
+                            Visibility="Collapsed">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock x:Name="saldoTB" Text="value"
+                               FontSize="20"
+                               Foreground="#222222"/>
+                            <TextBlock x:Name="valTopupTB" Text="Nilai Topup: "
+                                   VerticalAlignment="top"
+                                   Grid.Row="1"
+                                   FontSize="20"/>
+                            <Button x:Name="bayarBtn" Content="Bayar"
+                                Grid.Row="2"
+                                VerticalAlignment="Bottom"
+                                HorizontalAlignment="Right"
+                                Style="{StaticResource ButtonStyle}"
+                                Margin="0,5,0,0"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+                
             </Grid>
         </Border>
-        <StackPanel x:Name="paidContainer" Grid.Row="1" Orientation="Vertical" Visibility="Collapsed">
-            <TextBlock Text="Silahkan Masukkan Uang"
-                       FontSize="20"
-                       HorizontalAlignment="Center"
-                       Margin="0,30,0,0"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
-                        Margin="40">
-                <Button x:Name="u1kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
-                <Button x:Name="u2kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
-                <Button x:Name="u5kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
-                <Button x:Name="u10kPaymentBtn" Style="{StaticResource ButtonStyle}" Margin="5"/>
-            </StackPanel>
-        </StackPanel>
+        <Border Background="#0078AA" 
+                Grid.Row="1"
+                CornerRadius="40,40,0,0"
+                Margin="20,10,20,0">
+            <Grid>
+                <StackPanel x:Name="paidContainer" 
+                        Orientation="Vertical"
+                        Visibility="Collapsed">
+                    <Grid Margin="0,30,0,0">
+                        <TextBlock Text="Pilih Nominal Topup"
+                               FontSize="20"
+                               Foreground="#fffafb"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="0,0,0,30"/>
+                    </Grid>
+                    <Grid HorizontalAlignment="Center">
+                        <WrapPanel x:Name="btnContainer" 
+                               Orientation="Horizontal"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="top"
+                               Margin="0,0,0,40">
+                        </WrapPanel>
+                        <Button x:Name="correctionBtn" Content="Correction"
+                            VerticalAlignment="Bottom"
+                            HorizontalAlignment="Right"
+                            Style="{StaticResource ButtonStyle}"
+                            Margin="0,0,5,0"
+                            Height="35"
+                            Background="#DC3535"/>
+                    </Grid>
+                </StackPanel>
+                <StackPanel x:Name="pmContainer" 
+                        Orientation="Vertical"
+                        Visibility="Collapsed">
+                    <Grid Margin="0,30,0,0">
+                        <TextBlock Text="Pilih Metode Pembayaran"
+                               FontSize="20"
+                               Foreground="#fffafb"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               Margin="0,0,0,30"/>
+                    </Grid>
+                    <Grid HorizontalAlignment="Center">
+                        <WrapPanel x:Name="btnPMContainer" 
+                               Orientation="Horizontal"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="top"
+                               Margin="0,0,0,40">
+                        </WrapPanel>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
     </Grid>
 </Page>

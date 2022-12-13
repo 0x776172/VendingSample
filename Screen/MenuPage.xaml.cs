@@ -1,17 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace VendingDisplay.Screen
@@ -31,7 +22,7 @@ namespace VendingDisplay.Screen
             topupBtn.Click += TopupBtn_Click;
             checkBtn.Click += CheckBtn_Click;
             _menuPage.Loaded += _menuPage_Loaded;
-
+            _menuPage.Unloaded += _menuPage_Unloaded;
             mWindow = (MainWindow)Application.Current.MainWindow;
             bmp = mWindow.list_image;
 
@@ -42,6 +33,15 @@ namespace VendingDisplay.Screen
             timer.Tick += Timer_Tick;
             timer.Start();
         }
+
+        private void _menuPage_Unloaded(object sender, RoutedEventArgs e)
+        {
+            timer.Stop();
+            timer.Tick -= Timer_Tick;
+            mWindow.backBtn.Content = "Batal";
+            mWindow.backBtn.Visibility = Visibility.Visible;
+        }
+
         int img = 0;
 
 
@@ -54,6 +54,7 @@ namespace VendingDisplay.Screen
 
         private void _menuPage_Loaded(object sender, RoutedEventArgs e)
         {
+            mWindow.backBtn.Visibility = Visibility.Collapsed;
             imgContainer.Source = bmp[0];
         }
 

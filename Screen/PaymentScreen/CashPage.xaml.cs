@@ -13,15 +13,17 @@ namespace VendingDisplay.Screen.PaymentScreen
     /// </summary>
     public partial class CashPage : Page
     {
-        private readonly string tujuan;
+        private readonly string tujuan, method;
         private readonly string jumlah;
         private readonly int price;
         private readonly int tType;
         private readonly GenerateElement generate = new GenerateElement();
         private readonly MainWindow mWindow;
-        public CashPage(string tujuan, string jumlah, int price, int type)
+        private readonly TransactionLog log = new TransactionLog();
+        public CashPage(string method, string tujuan, string jumlah, int price, int type)
         {
             InitializeComponent();
+            this.method = method;
             this.price = price;
             this.tujuan = tujuan;
             this.jumlah = jumlah;
@@ -45,7 +47,7 @@ namespace VendingDisplay.Screen.PaymentScreen
         }
         private void PaidBtn_Click(object sender, RoutedEventArgs e)
         {
-            writeLog(tujuan, jumlah, price, paid, totalPaid);
+            log.WriteLog(method, tujuan, jumlah, price, paid, totalPaid);
             mWindow._mainFrame.NavigationService.Navigate(new ConfirmPage(tujuan, jumlah, price, totalPaid));
         }
 
@@ -55,7 +57,7 @@ namespace VendingDisplay.Screen.PaymentScreen
         private void _cashPage_Loaded(object sender, RoutedEventArgs e)
         {
             var nBtnList = generate.GenerateButton("nominal_payment", tType);
-            foreach (var newBtn in nBtnList)
+            foreach (Button newBtn in nBtnList)
             {
                 newBtn.Style = FindResource("ButtonStyle") as Style;
                 nominalContainer.Children.Add(newBtn);
@@ -67,9 +69,9 @@ namespace VendingDisplay.Screen.PaymentScreen
         private void updateTB()
         {
             totalPaid = paid - price;
-            tagihanTB.Text = price.ToString("C");
-            paidTB.Text = paid.ToString("C");
-            totalTB.Text = totalPaid.ToString("C");
+            tagihanTB.Text = $": {price:C}";
+            paidTB.Text = $": {paid:C}";
+            totalTB.Text = $": {totalPaid:C}";
             if (totalPaid < 0)
             {
                 totalTB.Foreground = Brushes.Red;
@@ -82,34 +84,6 @@ namespace VendingDisplay.Screen.PaymentScreen
                 statusTB.Foreground = Brushes.Green;
                 statusTB.Text = "Uang Cukup";
                 paidBtn.IsEnabled = true;
-            }
-        }
-
-        private void writeLog(string tujuan, string jumlah, int price, int paid, int totalPaid)
-        {
-            DateTime date = DateTime.Now;
-            string path = $@"D:\K\WPFApps\VendingDisplay\log_file\{date:dd-MM-yyyy}_log.txt";
-            try
-            {
-                using (StreamWriter w = File.AppendText(path))
-                {
-                    w.WriteLine($"Jam {date:HH:mm:ss}");
-                    w.WriteLine("========================");
-                    w.WriteLine($"Tujuan: {tujuan}");
-                    w.WriteLine($"Jumlah: {jumlah} tiket");
-                    w.WriteLine($"Harga: {price:C}");
-                    w.WriteLine("Metode Pembayaran: Cash");
-                    w.WriteLine($"Bayar: {paid:C}");
-                    w.WriteLine($"Kembalian: {totalPaid:C}");
-                    w.WriteLine("Status: Berhasil");
-                    w.WriteLine("========================");
-                    w.WriteLine();
-                    w.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -4,11 +4,20 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:VendingDisplay.Screen.PaymentScreen"
-      mc:Ignorable="d" Background="White"
+      mc:Ignorable="d" Background="#CCD6A6"
       d:DesignHeight="450" d:DesignWidth="600">
 
-    <Grid x:Name="container">
-        <Image x:Name="bgImg" Width="100" Height="100"></Image>
-        <TextBlock x:Name="tittleTB" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+    <Grid>
+        <Border HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="20"
+                CornerRadius="20"
+                Background="#FFFBE9">
+            <Image x:Name="bgImg" 
+                       Width="200"
+                       Height="200"
+                       Stretch="Uniform"
+                       Margin="20"/>
+        </Border>
     </Grid>
 </Page>
