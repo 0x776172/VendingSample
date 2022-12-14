@@ -73,7 +73,6 @@ namespace VendingDisplay.Screen
                 pBtn.Content = $"{pBtn.Content}";
             }
         }
-        private readonly MainWindow mWindow = (MainWindow)Application.Current.MainWindow;
         private void PBtn_Click(object sender, RoutedEventArgs e)
         {
             Button cBtn = (Button)sender;
@@ -81,6 +80,7 @@ namespace VendingDisplay.Screen
             _ = cBtn.Name.ToString().Contains("cash")
                 ? mWindow._mainFrame.NavigationService.Navigate(
                     new CashPage(
+                        "Top Up",
                         cBtn.Content.ToString(),
                         "-",
                         "-",
@@ -88,6 +88,7 @@ namespace VendingDisplay.Screen
                         0))
                 : mWindow._mainFrame.NavigationService.Navigate(
                     new OnlinePage(
+                        "Top Up",
                         cBtn.Content.ToString(),
                         "-",
                         "-",

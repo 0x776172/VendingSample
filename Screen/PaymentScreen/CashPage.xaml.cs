@@ -13,16 +13,17 @@ namespace VendingDisplay.Screen.PaymentScreen
     /// </summary>
     public partial class CashPage : Page
     {
-        private readonly string tujuan, method;
+        private readonly string tujuan, method, transaction;
         private readonly string jumlah;
         private readonly int price;
         private readonly int tType;
         private readonly GenerateElement generate = new GenerateElement();
         private readonly MainWindow mWindow;
         private readonly TransactionLog log = new TransactionLog();
-        public CashPage(string method, string tujuan, string jumlah, int price, int type)
+        public CashPage(string transactionType, string method, string tujuan, string jumlah, int price, int type)
         {
             InitializeComponent();
+            transaction = transactionType;
             this.method = method;
             this.price = price;
             this.tujuan = tujuan;
@@ -47,7 +48,8 @@ namespace VendingDisplay.Screen.PaymentScreen
         }
         private void PaidBtn_Click(object sender, RoutedEventArgs e)
         {
-            log.WriteLog(method, tujuan, jumlah, price, paid, totalPaid);
+            log.WriteLog(transaction, method, tujuan, jumlah, price, paid, totalPaid);
+            log.WriteToDB(transaction, method, tujuan, jumlah, price, paid, totalPaid);
             mWindow._mainFrame.NavigationService.Navigate(new ConfirmPage(tujuan, jumlah, price, totalPaid));
         }
 

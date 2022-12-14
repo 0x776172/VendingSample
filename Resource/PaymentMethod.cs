@@ -59,5 +59,15 @@ namespace VendingDisplay.Resource
             }
             return pm;
         }
+        public void InsertToDB(string cmd)
+        {
+            if(!(con.State == System.Data.ConnectionState.Open))
+            {
+                connectDB("db_vending_sample");
+            }
+            NpgsqlCommand nCmd = new NpgsqlCommand(cmd, con);
+            nCmd.ExecuteNonQuery();
+            closeDB();
+        }
     }
 }

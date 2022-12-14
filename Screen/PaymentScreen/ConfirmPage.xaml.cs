@@ -77,6 +77,7 @@ namespace VendingDisplay.Screen.PaymentScreen
             jumlahTB.Text = $": {jumlah} tiket";
             hargaTB.Text = $": {price:C}";
             statusTB.Text = totalTransaksi > 0 ? $"Kembalian {totalTransaksi:C}" : "Terima Kasih!";
+            tapContainer.Visibility = Visibility.Visible;
         }
     }
 }

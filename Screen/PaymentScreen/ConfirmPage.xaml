@@ -20,12 +20,14 @@
                    HorizontalAlignment="Right"/>
         <Border Background="White" 
             HorizontalAlignment="Center"
+                VerticalAlignment="Center"
             Margin="20"
             CornerRadius="20">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <StackPanel Orientation="Vertical" 
                         VerticalAlignment="Top"
@@ -61,15 +63,14 @@
                                        Text="Jumlah"/>
                             <TextBlock Grid.Row="2"
                                        Text="Harga"/>
-
                             <TextBlock x:Name="tujuanTB" Grid.Column="1"/>
                             <TextBlock x:Name="jumlahTB" Grid.Row="1" Grid.Column="1"/>
                             <TextBlock x:Name="hargaTB" Grid.Row="2" Grid.Column="1"/>
                         </Grid>
                     </GroupBox>
-                    <TextBlock x:Name="statusTB" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="statusTB" Text="Status" HorizontalAlignment="Center"/>
                 </StackPanel>
-                <Border Grid.Row="1"
+                <Border x:Name="tapContainer" Grid.Row="2"
                         Background="#E5181D31"
                         VerticalAlignment="Bottom" 
                         HorizontalAlignment="Center"

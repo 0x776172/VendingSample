@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:VendingDisplay"
         Background="White"
         AllowsTransparency="True"
-        mc:Ignorable="d" WindowStyle="None" Height="450" Width="600">
+        mc:Ignorable="d" 
+        WindowStyle="None"
+        Height="450" Width="600">
 
     <Grid>
         <Frame Name="_mainFrame"></Frame>
         <Border x:Name="topContainer" BorderThickness="1" 
+                Margin="5,0,5,0"
                 CornerRadius="0,0,10,10"
                 BorderBrush="FloralWhite" 
                 VerticalAlignment="Top"

@@ -97,6 +97,7 @@ namespace VendingDisplay.Screen
             _ = cBtn.Name.ToString().Contains("cash")
                 ? mWindow._mainFrame.NavigationService.Navigate(
                     new CashPage(
+                        "Pembelian Tiket",
                         cBtn.Content.ToString(),
                         tujuanCB.Text,
                         valTB.Text,
@@ -104,6 +105,7 @@ namespace VendingDisplay.Screen
                         0))
                 : mWindow._mainFrame.NavigationService.Navigate(
                     new OnlinePage(
+                        "Pembelian Tiket",
                         cBtn.Content.ToString(),
                         tujuanCB.Text,
                         valTB.Text,

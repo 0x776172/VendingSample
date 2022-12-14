@@ -18,14 +18,15 @@ namespace VendingDisplay.Screen.PaymentScreen
     /// </summary>
     public partial class OnlinePage : Page
     {
-        private string title, tujuan, jumlah;
+        private string title, tujuan, jumlah, transaction;
         private int price;
-        AssetQuery aq = new AssetQuery();
-        MainWindow mWindow = (MainWindow)Application.Current.MainWindow;
-        TransactionLog log = new TransactionLog();
-        public OnlinePage(string method, string tujuan, string jumlah, int price)
+        private AssetQuery aq = new AssetQuery();
+        private MainWindow mWindow = (MainWindow)Application.Current.MainWindow;
+        private TransactionLog log = new TransactionLog();
+        public OnlinePage(string transaction, string method, string tujuan, string jumlah, int price)
         {
             InitializeComponent();
+            this.transaction = transaction;
             title = method;
             this.price = price;
             this.tujuan = tujuan;
@@ -37,7 +38,8 @@ namespace VendingDisplay.Screen.PaymentScreen
 
         private void BgImg_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            log.WriteLog(title, tujuan, jumlah, price, price, 0);
+            log.WriteLog(transaction, title, tujuan, jumlah, price, price, 0);
+            log.WriteToDB(transaction, title, tujuan, jumlah, price, price, 0);
             mWindow._mainFrame.NavigationService.Navigate(new ConfirmPage(tujuan, jumlah, price, 0));
         }
 
@@ -49,14 +51,14 @@ namespace VendingDisplay.Screen.PaymentScreen
         private void _onlinePage_Loaded(object sender, RoutedEventArgs e)
         {
             mWindow.topContainer.Visibility = Visibility.Collapsed;
-            float width = 120;
-            float height = 90;
+            float width = 150;
+            float height = 120;
 
             BarcodeWriter writer = new BarcodeWriter();
             EncodingOptions options = new EncodingOptions()
             {
-                Width = 300,
-                Height = 300,
+                Width = 350,
+                Height = 350,
                 Margin = 0,
                 PureBarcode = false
             };

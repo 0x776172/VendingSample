@@ -1,0 +1,300 @@
+Jam 11:47:14
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: OVO
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp20.000
+Bayar: Rp20.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 11:53:44
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: OVO
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp5.000
+Bayar: Rp5.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 12:13:23
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: LinkAja
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp10.000
+Bayar: Rp10.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 12:34:10
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: OVO
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp10.000
+Bayar: Rp10.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:41:58
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Cash
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp5.000
+Kembali: Rp2.000
+Status: Berhasil
+========================
+
+Jam 14:44:16
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Cash
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp5.000
+Kembali: Rp2.000
+Status: Berhasil
+========================
+
+Jam 14:46:08
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Cash
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp5.000
+Kembali: Rp2.000
+Status: Berhasil
+========================
+
+Jam 14:47:02
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Cash
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp5.000
+Kembali: Rp2.000
+Status: Berhasil
+========================
+
+Jam 14:47:49
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: OVO
+Tujuan: Pasar Senen
+Jumlah: 3 tiket
+Harga: Rp9.000
+Bayar: Rp9.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:49:22
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: OVO
+Tujuan: Jatinegara
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:55:02
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Cash
+Tujuan: Jatinegara
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp5.000
+Kembali: Rp2.000
+Status: Berhasil
+========================
+
+Jam 14:56:41
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:57:01
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: OVO
+Tujuan: Durenkalibata
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:57:22
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:58:29
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:58:58
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 14:59:35
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Durenkalibata
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:01:06
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:03:23
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:04:24
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Durenkalibata
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:05:10
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:05:49
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:11:19
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: OVO
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp20.000
+Bayar: Rp20.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:36:14
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: Cash
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp10.000
+Bayar: Rp10.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 15:36:41
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: Cash
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp10.000
+Bayar: Rp15.000
+Kembali: Rp5.000
+Status: Berhasil
+========================
+
