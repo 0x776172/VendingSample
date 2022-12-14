@@ -21,7 +21,7 @@ namespace VendingDisplay
             // Check how many total processes have the same name as the current one
             if (Process.GetProcessesByName(thisProc.ProcessName).Length > 1)
             {
-                // If ther is more than one, than it is already running.
+                // If there is more than one, than it is already running.
                 MessageBox.Show("Application is already running.");
                 Application.Current.Shutdown();
                 return;

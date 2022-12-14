@@ -298,3 +298,39 @@ Kembali: Rp5.000
 Status: Berhasil
 ========================
 
+Jam 16:07:23
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Cash
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp5.000
+Kembali: Rp2.000
+Status: Berhasil
+========================
+
+Jam 16:07:32
+========================
+Jenis Transaksi: Pembelian Tiket
+Metode Pembayaran: Gojek
+Tujuan: Pasar Senen
+Jumlah: 1 tiket
+Harga: Rp3.000
+Bayar: Rp3.000
+Kembali: Rp0
+Status: Berhasil
+========================
+
+Jam 16:07:43
+========================
+Jenis Transaksi: Top Up
+Metode Pembayaran: Cash
+Tujuan: -
+Jumlah: - tiket
+Harga: Rp10.000
+Bayar: Rp15.000
+Kembali: Rp5.000
+Status: Berhasil
+========================
+
